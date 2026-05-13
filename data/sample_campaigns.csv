@@ -1,0 +1,43 @@
+day,campaign_id,campaign_name,channel,impressions,visits,clicks,signups
+2026-03-02,cmp_1001,Logistics Resilience Webinar,webinar,636,69,48,2
+2026-03-02,cmp_1002,Cloud Migration Checklist Email,email,2391,194,128,12
+2026-03-02,cmp_1003,Healthcare Admin Benchmark Report,content,1012,52,38,2
+2026-03-03,cmp_1001,Logistics Resilience Webinar,webinar,1088,54,31,2
+2026-03-03,cmp_1002,Cloud Migration Checklist Email,email,1879,218,165,5
+2026-03-03,cmp_1003,Healthcare Admin Benchmark Report,content,930,81,62,3
+2026-03-04,cmp_1001,Logistics Resilience Webinar,webinar,695,55,22,1
+2026-03-04,cmp_1002,Cloud Migration Checklist Email,email,2280,193,95,4
+2026-03-04,cmp_1003,Healthcare Admin Benchmark Report,content,1162,95,49,1
+2026-03-05,cmp_1001,Logistics Resilience Webinar,webinar,1143,101,66,3
+2026-03-05,cmp_1002,Cloud Migration Checklist Email,email,3345,368,164,9
+2026-03-05,cmp_1003,Healthcare Admin Benchmark Report,content,1765,176,136,9
+2026-03-06,cmp_1001,Logistics Resilience Webinar,webinar,1137,110,57,4
+2026-03-06,cmp_1002,Cloud Migration Checklist Email,email,3134,342,205,17
+2026-03-06,cmp_1003,Healthcare Admin Benchmark Report,content,941,63,45,3
+2026-03-07,cmp_1001,Logistics Resilience Webinar,webinar,465,41,27,2
+2026-03-07,cmp_1002,Cloud Migration Checklist Email,email,1511,121,73,7
+2026-03-07,cmp_1003,Healthcare Admin Benchmark Report,content,1067,82,48,1
+2026-03-08,cmp_1001,Logistics Resilience Webinar,webinar,399,39,30,2
+2026-03-08,cmp_1002,Cloud Migration Checklist Email,email,1536,95,57,6
+2026-03-08,cmp_1003,Healthcare Admin Benchmark Report,content,1277,112,83,4
+2026-03-09,cmp_1001,Logistics Resilience Webinar,webinar,909,106,66,4
+2026-03-09,cmp_1002,Cloud Migration Checklist Email,email,1957,172,134,4
+2026-03-09,cmp_1003,Healthcare Admin Benchmark Report,content,1840,197,148,14
+2026-03-10,cmp_1001,Logistics Resilience Webinar,webinar,1122,96,59,4
+2026-03-10,cmp_1002,Cloud Migration Checklist Email,email,1547,171,107,5
+2026-03-10,cmp_1003,Healthcare Admin Benchmark Report,content,1505,126,68,4
+2026-03-11,cmp_1001,Logistics Resilience Webinar,webinar,927,86,55,3
+2026-03-11,cmp_1002,Cloud Migration Checklist Email,email,1493,98,46,3
+2026-03-11,cmp_1003,Healthcare Admin Benchmark Report,content,1933,204,146,15
+2026-03-12,cmp_1001,Logistics Resilience Webinar,webinar,723,78,52,1
+2026-03-12,cmp_1002,Cloud Migration Checklist Email,email,1472,75,52,2
+2026-03-12,cmp_1003,Healthcare Admin Benchmark Report,content,1031,96,51,1
+2026-03-13,cmp_1001,Logistics Resilience Webinar,webinar,654,56,26,1
+2026-03-13,cmp_1002,Cloud Migration Checklist Email,email,2806,229,121,8
+2026-03-13,cmp_1003,Healthcare Admin Benchmark Report,content,928,71,40,1
+2026-03-14,cmp_1001,Logistics Resilience Webinar,webinar,432,48,28,1
+2026-03-14,cmp_1002,Cloud Migration Checklist Email,email,1821,195,79,2
+2026-03-14,cmp_1003,Healthcare Admin Benchmark Report,content,753,75,34,3
+2026-03-15,cmp_1001,Logistics Resilience Webinar,webinar,719,63,30,3
+2026-03-15,cmp_1002,Cloud Migration Checklist Email,email,2080,179,87,7
+2026-03-15,cmp_1003,Healthcare Admin Benchmark Report,content,961,86,45,3
