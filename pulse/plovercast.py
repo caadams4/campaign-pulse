@@ -27,8 +27,14 @@ class Plovercast:
         return resp.json()
 
     def campaigns(self):
-        # TODO: pagination, only first page for now
-        return self._get("/campaigns")["items"]
+        """All campaigns, following next_cursor until it runs out."""
+        cursor = None
+        while True:
+            page = self._get("/campaigns", {"cursor": cursor} if cursor else None)
+            yield from page["items"]
+            cursor = page.get("next_cursor")
+            if not cursor:
+                return
 
     def daily_metrics(self, campaign_id, start, end):
         data = self._get(
