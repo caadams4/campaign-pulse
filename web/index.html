@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>campaign-pulse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>campaign pulse</h1>
+  <p class="sub">visits and signups, last 30 days (all campaigns)</p>
+  <canvas id="daily" width="900" height="320"></canvas>
+  <script src="chart.js"></script>
+  <script>
+    fetch('/api/daily?days=30').then(r => r.json()).then(rows => drawLines(document.getElementById('daily'), rows));
+  </script>
+</body>
+</html>
