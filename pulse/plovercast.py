@@ -3,6 +3,8 @@
 Sunniva's plovercast-client does this properly (typed models etc) but we only
 need two calls so I kept it small.
 """
+import time
+
 import requests
 
 DEFAULT_BASE_URL = "https://api.plovercast.com/v3"
@@ -21,10 +23,15 @@ class Plovercast:
     def _get(self, path, params=None):
         url = f"{self.base_url}{path}"
         headers = {"X-Api-Key": self.api_key, "Accept": "application/json"}
-        resp = self.session.get(url, params=params, headers=headers, timeout=30)
-        if resp.status_code >= 400:
-            raise PlovercastError(f"{resp.status_code} from {path}: {resp.text[:200]}")
-        return resp.json()
+        for attempt in range(4):
+            resp = self.session.get(url, params=params, headers=headers, timeout=30)
+            if resp.status_code == 429 or resp.status_code >= 500:
+                time.sleep(2 ** attempt)
+                continue
+            if resp.status_code >= 400:
+                raise PlovercastError(f"{resp.status_code} from {path}: {resp.text[:200]}")
+            return resp.json()
+        raise PlovercastError(f"gave up on {path}")
 
     def campaigns(self):
         """All campaigns, following next_cursor until it runs out."""
