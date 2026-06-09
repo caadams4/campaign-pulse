@@ -19,5 +19,10 @@ def daily(days: int = 30):
     return query("select * from v_daily_totals where day >= current_date - %s order by day", (days,))
 
 
+@app.get("/api/channels")
+def channels():
+    return query("select * from v_channel_rollup")
+
+
 # keep this last or it swallows the api routes
 app.mount("/", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "..", "web"), html=True), name="web")

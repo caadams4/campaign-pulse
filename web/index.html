@@ -9,9 +9,15 @@
   <h1>campaign pulse</h1>
   <p class="sub">visits and signups, last 30 days (all campaigns)</p>
   <canvas id="daily" width="900" height="320"></canvas>
+  <h2>by channel (30d)</h2>
+  <table id="channels"><thead><tr><th>channel</th><th>impr.</th><th>visits</th><th>clicks</th><th>signups</th><th>rate %</th></tr></thead><tbody></tbody></table>
   <script src="chart.js"></script>
   <script>
     fetch('/api/daily?days=30').then(r => r.json()).then(rows => drawLines(document.getElementById('daily'), rows));
+    fetch('/api/channels').then(r => r.json()).then(rows => {
+      document.querySelector('#channels tbody').innerHTML = rows.map(r =>
+        `<tr><td>${r.channel}</td><td>${r.impressions}</td><td>${r.visits}</td><td>${r.clicks}</td><td>${r.signups}</td><td>${r.signup_rate_pct ?? '-'}</td></tr>`).join('');
+    });
   </script>
 </body>
 </html>
