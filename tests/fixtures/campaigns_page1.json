@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": "cmp_1001",
+      "name": "Logistics Resilience Webinar",
+      "channel": "webinar",
+      "kind": "webinar"
+    },
+    {
+      "id": "cmp_1002",
+      "name": "Cloud Migration Checklist Email",
+      "channel": "email"
+    }
+  ],
+  "next_cursor": "c_page2"
+}

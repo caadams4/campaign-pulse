@@ -1,0 +1,18 @@
+{
+  "rows": [
+    {
+      "date": "2026-04-06",
+      "impressions": 1200,
+      "visits": 96,
+      "clicks": 51,
+      "signups": 4
+    },
+    {
+      "date": "2026-04-07",
+      "impressions": 1310,
+      "visits": 101,
+      "clicks": 60,
+      "signups": 6
+    }
+  ]
+}
