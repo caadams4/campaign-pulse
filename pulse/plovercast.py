@@ -14,6 +14,14 @@ class PlovercastError(Exception):
     pass
 
 
+def _retry_delay(resp, attempt):
+    """Prefer the server's Retry-After (seconds) over our own backoff."""
+    try:
+        return min(float(resp.headers.get("Retry-After", "")), 60.0)
+    except ValueError:
+        return float(2 ** attempt)
+
+
 class Plovercast:
     def __init__(self, api_key, base_url=DEFAULT_BASE_URL, session=None):
         self.api_key = api_key
@@ -26,7 +34,7 @@ class Plovercast:
         for attempt in range(4):
             resp = self.session.get(url, params=params, headers=headers, timeout=30)
             if resp.status_code == 429 or resp.status_code >= 500:
-                time.sleep(2 ** attempt)
+                time.sleep(_retry_delay(resp, attempt))
                 continue
             if resp.status_code >= 400:
                 raise PlovercastError(f"{resp.status_code} from {path}: {resp.text[:200]}")

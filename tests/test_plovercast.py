@@ -50,6 +50,14 @@ def test_daily_metrics_rows():
     assert len(rows) == 2 and rows[0]["visits"] == 96
 
 
+def test_429_honours_retry_after(monkeypatch):
+    slept = []
+    monkeypatch.setattr("pulse.plovercast.time.sleep", slept.append)
+    s = FakeSession([FakeResp(429, {}, {"Retry-After": "7"}), FakeResp(200, fixture("metrics.json"))])
+    Plovercast("example-key", session=s).daily_metrics("cmp_1001", date(2026, 4, 6), date(2026, 4, 7))
+    assert slept == [7.0]
+
+
 def test_4xx_raises():
     s = FakeSession([FakeResp(403, {"error": "nope"})])
     with pytest.raises(PlovercastError):
