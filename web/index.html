@@ -11,12 +11,18 @@
   <canvas id="daily" width="900" height="320"></canvas>
   <h2>by channel (30d)</h2>
   <table id="channels"><thead><tr><th>channel</th><th>impr.</th><th>visits</th><th>clicks</th><th>signups</th><th>rate %</th></tr></thead><tbody></tbody></table>
+  <h2>webinars</h2>
+  <table id="webinars"><thead><tr><th>webinar</th><th>held</th><th>registrations</th><th>assist visits</th></tr></thead><tbody></tbody></table>
   <script src="chart.js"></script>
   <script>
     fetch('/api/daily?days=30').then(r => r.json()).then(rows => drawLines(document.getElementById('daily'), rows));
     fetch('/api/channels').then(r => r.json()).then(rows => {
       document.querySelector('#channels tbody').innerHTML = rows.map(r =>
         `<tr><td>${r.channel}</td><td>${r.impressions}</td><td>${r.visits}</td><td>${r.clicks}</td><td>${r.signups}</td><td>${r.signup_rate_pct ?? '-'}</td></tr>`).join('');
+    });
+    fetch('/api/webinars').then(r => r.json()).then(rows => {
+      document.querySelector('#webinars tbody').innerHTML = rows.map(r =>
+        `<tr><td>${r.name}</td><td>${r.held_on}</td><td>${r.registrations}</td><td>${r.assist_visits}</td></tr>`).join('');
     });
   </script>
 </body>

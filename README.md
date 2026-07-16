@@ -18,7 +18,7 @@ the whole thing. It is deliberately small.
 python3.12 -m venv .venv && source .venv/bin/activate
 pip install -r requirements-dev.txt
 cp .env.example .env          # then fill in the blanks, never commit .env
-psql "$PULSE_DATABASE_URL" -f sql/001_schema.sql -f sql/002_views.sql
+psql "$PULSE_DATABASE_URL" -f sql/001_schema.sql -f sql/002_views.sql -f sql/003_webinar_attribution.sql
 python -m scripts.load_sample # fake numbers, no API key needed
 uvicorn pulse.web:app --port 8000
 ```
@@ -48,6 +48,13 @@ All via environment variables (see `.env.example`, values intentionally empty).
 | `data/sample_campaigns.csv` | invented numbers, any resemblance to real campaigns is a coincidence |
 | `web/` | the chart page, hand-rolled canvas, no build step |
 | `tests/` | pytest, fake responses only |
+
+## 🎤 Webinar attribution
+
+`sql/003_webinar_attribution.sql` gives each webinar credit for its own signups
+plus visits from other campaigns in the 14 days before it was held. Register a
+webinar in the `webinar_event` table (the sample loader does it for you) and it
+shows up on the page.
 
 ## 🧪 Tests
 

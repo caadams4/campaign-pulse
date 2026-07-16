@@ -1,43 +1,361 @@
 day,campaign_id,campaign_name,channel,impressions,visits,clicks,signups
-2026-03-02,cmp_1001,Logistics Resilience Webinar,webinar,636,69,48,2
-2026-03-02,cmp_1002,Cloud Migration Checklist Email,email,2391,194,128,12
-2026-03-02,cmp_1003,Healthcare Admin Benchmark Report,content,1012,52,38,2
-2026-03-03,cmp_1001,Logistics Resilience Webinar,webinar,1088,54,31,2
-2026-03-03,cmp_1002,Cloud Migration Checklist Email,email,1879,218,165,5
-2026-03-03,cmp_1003,Healthcare Admin Benchmark Report,content,930,81,62,3
-2026-03-04,cmp_1001,Logistics Resilience Webinar,webinar,695,55,22,1
-2026-03-04,cmp_1002,Cloud Migration Checklist Email,email,2280,193,95,4
-2026-03-04,cmp_1003,Healthcare Admin Benchmark Report,content,1162,95,49,1
-2026-03-05,cmp_1001,Logistics Resilience Webinar,webinar,1143,101,66,3
-2026-03-05,cmp_1002,Cloud Migration Checklist Email,email,3345,368,164,9
-2026-03-05,cmp_1003,Healthcare Admin Benchmark Report,content,1765,176,136,9
-2026-03-06,cmp_1001,Logistics Resilience Webinar,webinar,1137,110,57,4
-2026-03-06,cmp_1002,Cloud Migration Checklist Email,email,3134,342,205,17
-2026-03-06,cmp_1003,Healthcare Admin Benchmark Report,content,941,63,45,3
-2026-03-07,cmp_1001,Logistics Resilience Webinar,webinar,465,41,27,2
-2026-03-07,cmp_1002,Cloud Migration Checklist Email,email,1511,121,73,7
-2026-03-07,cmp_1003,Healthcare Admin Benchmark Report,content,1067,82,48,1
-2026-03-08,cmp_1001,Logistics Resilience Webinar,webinar,399,39,30,2
-2026-03-08,cmp_1002,Cloud Migration Checklist Email,email,1536,95,57,6
-2026-03-08,cmp_1003,Healthcare Admin Benchmark Report,content,1277,112,83,4
-2026-03-09,cmp_1001,Logistics Resilience Webinar,webinar,909,106,66,4
-2026-03-09,cmp_1002,Cloud Migration Checklist Email,email,1957,172,134,4
-2026-03-09,cmp_1003,Healthcare Admin Benchmark Report,content,1840,197,148,14
-2026-03-10,cmp_1001,Logistics Resilience Webinar,webinar,1122,96,59,4
-2026-03-10,cmp_1002,Cloud Migration Checklist Email,email,1547,171,107,5
-2026-03-10,cmp_1003,Healthcare Admin Benchmark Report,content,1505,126,68,4
-2026-03-11,cmp_1001,Logistics Resilience Webinar,webinar,927,86,55,3
-2026-03-11,cmp_1002,Cloud Migration Checklist Email,email,1493,98,46,3
-2026-03-11,cmp_1003,Healthcare Admin Benchmark Report,content,1933,204,146,15
-2026-03-12,cmp_1001,Logistics Resilience Webinar,webinar,723,78,52,1
-2026-03-12,cmp_1002,Cloud Migration Checklist Email,email,1472,75,52,2
-2026-03-12,cmp_1003,Healthcare Admin Benchmark Report,content,1031,96,51,1
-2026-03-13,cmp_1001,Logistics Resilience Webinar,webinar,654,56,26,1
-2026-03-13,cmp_1002,Cloud Migration Checklist Email,email,2806,229,121,8
-2026-03-13,cmp_1003,Healthcare Admin Benchmark Report,content,928,71,40,1
-2026-03-14,cmp_1001,Logistics Resilience Webinar,webinar,432,48,28,1
-2026-03-14,cmp_1002,Cloud Migration Checklist Email,email,1821,195,79,2
-2026-03-14,cmp_1003,Healthcare Admin Benchmark Report,content,753,75,34,3
-2026-03-15,cmp_1001,Logistics Resilience Webinar,webinar,719,63,30,3
-2026-03-15,cmp_1002,Cloud Migration Checklist Email,email,2080,179,87,7
-2026-03-15,cmp_1003,Healthcare Admin Benchmark Report,content,961,86,45,3
+2026-03-02,cmp_1001,Logistics Resilience Webinar,webinar,773,46,30,1
+2026-03-02,cmp_1002,Cloud Migration Checklist Email,email,2468,186,78,5
+2026-03-02,cmp_1003,Healthcare Admin Benchmark Report,content,944,75,32,1
+2026-03-02,cmp_1004,Retail Ops Teardown Series,linkedin,2912,314,141,7
+2026-03-02,cmp_1005,Spring Newsletter,email,2644,307,193,12
+2026-03-02,cmp_1006,Supply Chain Data Webinar,webinar,1242,66,49,2
+2026-03-03,cmp_1001,Logistics Resilience Webinar,webinar,643,37,19,1
+2026-03-03,cmp_1002,Cloud Migration Checklist Email,email,1786,162,106,6
+2026-03-03,cmp_1003,Healthcare Admin Benchmark Report,content,1557,84,35,1
+2026-03-03,cmp_1004,Retail Ops Teardown Series,linkedin,3547,283,148,12
+2026-03-03,cmp_1005,Spring Newsletter,email,2310,163,116,10
+2026-03-03,cmp_1006,Supply Chain Data Webinar,webinar,715,64,39,4
+2026-03-04,cmp_1001,Logistics Resilience Webinar,webinar,1065,74,58,2
+2026-03-04,cmp_1002,Cloud Migration Checklist Email,email,2242,230,105,7
+2026-03-04,cmp_1003,Healthcare Admin Benchmark Report,content,947,91,64,5
+2026-03-04,cmp_1004,Retail Ops Teardown Series,linkedin,4031,290,196,16
+2026-03-04,cmp_1005,Spring Newsletter,email,2553,209,153,17
+2026-03-04,cmp_1006,Supply Chain Data Webinar,webinar,881,85,36,3
+2026-03-05,cmp_1001,Logistics Resilience Webinar,webinar,1005,120,87,4
+2026-03-05,cmp_1002,Cloud Migration Checklist Email,email,2180,211,86,6
+2026-03-05,cmp_1003,Healthcare Admin Benchmark Report,content,1101,64,27,2
+2026-03-05,cmp_1004,Retail Ops Teardown Series,linkedin,2180,146,81,8
+2026-03-05,cmp_1005,Spring Newsletter,email,1594,129,79,8
+2026-03-05,cmp_1006,Supply Chain Data Webinar,webinar,1129,124,63,4
+2026-03-06,cmp_1001,Logistics Resilience Webinar,webinar,798,89,69,3
+2026-03-06,cmp_1002,Cloud Migration Checklist Email,email,1778,117,57,4
+2026-03-06,cmp_1003,Healthcare Admin Benchmark Report,content,1606,109,43,2
+2026-03-06,cmp_1004,Retail Ops Teardown Series,linkedin,2775,248,193,17
+2026-03-06,cmp_1005,Spring Newsletter,email,2429,226,151,5
+2026-03-06,cmp_1006,Supply Chain Data Webinar,webinar,1187,124,92,9
+2026-03-07,cmp_1001,Logistics Resilience Webinar,webinar,575,44,19,1
+2026-03-07,cmp_1002,Cloud Migration Checklist Email,email,1091,59,28,1
+2026-03-07,cmp_1003,Healthcare Admin Benchmark Report,content,915,49,19,0
+2026-03-07,cmp_1004,Retail Ops Teardown Series,linkedin,1478,111,45,4
+2026-03-07,cmp_1005,Spring Newsletter,email,1833,110,55,3
+2026-03-07,cmp_1006,Supply Chain Data Webinar,webinar,561,32,23,2
+2026-03-08,cmp_1001,Logistics Resilience Webinar,webinar,612,51,22,0
+2026-03-08,cmp_1002,Cloud Migration Checklist Email,email,1468,100,73,3
+2026-03-08,cmp_1003,Healthcare Admin Benchmark Report,content,649,75,45,1
+2026-03-08,cmp_1004,Retail Ops Teardown Series,linkedin,2244,116,70,8
+2026-03-08,cmp_1005,Spring Newsletter,email,2168,214,107,6
+2026-03-08,cmp_1006,Supply Chain Data Webinar,webinar,462,48,29,2
+2026-03-09,cmp_1001,Logistics Resilience Webinar,webinar,777,50,36,4
+2026-03-09,cmp_1002,Cloud Migration Checklist Email,email,3077,327,237,22
+2026-03-09,cmp_1003,Healthcare Admin Benchmark Report,content,1172,101,54,1
+2026-03-09,cmp_1004,Retail Ops Teardown Series,linkedin,1929,134,67,6
+2026-03-09,cmp_1005,Spring Newsletter,email,3276,266,206,24
+2026-03-09,cmp_1006,Supply Chain Data Webinar,webinar,1227,92,44,2
+2026-03-10,cmp_1001,Logistics Resilience Webinar,webinar,681,43,27,2
+2026-03-10,cmp_1002,Cloud Migration Checklist Email,email,3053,255,168,17
+2026-03-10,cmp_1003,Healthcare Admin Benchmark Report,content,1001,96,73,7
+2026-03-10,cmp_1004,Retail Ops Teardown Series,linkedin,3720,310,146,14
+2026-03-10,cmp_1005,Spring Newsletter,email,2078,220,173,11
+2026-03-10,cmp_1006,Supply Chain Data Webinar,webinar,828,96,66,2
+2026-03-11,cmp_1001,Logistics Resilience Webinar,webinar,631,38,28,2
+2026-03-11,cmp_1002,Cloud Migration Checklist Email,email,1720,185,146,13
+2026-03-11,cmp_1003,Healthcare Admin Benchmark Report,content,1320,116,52,1
+2026-03-11,cmp_1004,Retail Ops Teardown Series,linkedin,4267,407,248,28
+2026-03-11,cmp_1005,Spring Newsletter,email,2272,252,184,9
+2026-03-11,cmp_1006,Supply Chain Data Webinar,webinar,721,50,24,1
+2026-03-12,cmp_1001,Logistics Resilience Webinar,webinar,726,57,25,2
+2026-03-12,cmp_1002,Cloud Migration Checklist Email,email,2119,173,109,12
+2026-03-12,cmp_1003,Healthcare Admin Benchmark Report,content,1404,160,96,7
+2026-03-12,cmp_1004,Retail Ops Teardown Series,linkedin,3158,162,93,4
+2026-03-12,cmp_1005,Spring Newsletter,email,1447,153,71,5
+2026-03-12,cmp_1006,Supply Chain Data Webinar,webinar,1062,94,49,3
+2026-03-13,cmp_1001,Logistics Resilience Webinar,webinar,939,98,43,3
+2026-03-13,cmp_1002,Cloud Migration Checklist Email,email,1917,133,94,7
+2026-03-13,cmp_1003,Healthcare Admin Benchmark Report,content,1574,162,123,8
+2026-03-13,cmp_1004,Retail Ops Teardown Series,linkedin,3379,288,174,16
+2026-03-13,cmp_1005,Spring Newsletter,email,2308,201,118,13
+2026-03-13,cmp_1006,Supply Chain Data Webinar,webinar,1043,116,90,4
+2026-03-14,cmp_1001,Logistics Resilience Webinar,webinar,659,76,55,2
+2026-03-14,cmp_1002,Cloud Migration Checklist Email,email,1171,94,40,2
+2026-03-14,cmp_1003,Healthcare Admin Benchmark Report,content,691,66,47,5
+2026-03-14,cmp_1004,Retail Ops Teardown Series,linkedin,1570,157,104,4
+2026-03-14,cmp_1005,Spring Newsletter,email,2194,258,125,14
+2026-03-14,cmp_1006,Supply Chain Data Webinar,webinar,578,48,38,3
+2026-03-15,cmp_1001,Logistics Resilience Webinar,webinar,459,36,21,1
+2026-03-15,cmp_1002,Cloud Migration Checklist Email,email,1271,91,62,1
+2026-03-15,cmp_1003,Healthcare Admin Benchmark Report,content,1095,88,35,2
+2026-03-15,cmp_1004,Retail Ops Teardown Series,linkedin,2385,204,86,10
+2026-03-15,cmp_1005,Spring Newsletter,email,2067,243,107,5
+2026-03-15,cmp_1006,Supply Chain Data Webinar,webinar,397,41,20,0
+2026-03-16,cmp_1001,Logistics Resilience Webinar,webinar,844,96,69,3
+2026-03-16,cmp_1002,Cloud Migration Checklist Email,email,1726,197,123,11
+2026-03-16,cmp_1003,Healthcare Admin Benchmark Report,content,1007,54,36,2
+2026-03-16,cmp_1004,Retail Ops Teardown Series,linkedin,2039,235,153,15
+2026-03-16,cmp_1005,Spring Newsletter,email,1600,175,74,7
+2026-03-16,cmp_1006,Supply Chain Data Webinar,webinar,866,63,39,4
+2026-03-17,cmp_1001,Logistics Resilience Webinar,webinar,732,43,26,1
+2026-03-17,cmp_1002,Cloud Migration Checklist Email,email,1650,101,42,2
+2026-03-17,cmp_1003,Healthcare Admin Benchmark Report,content,1274,90,63,3
+2026-03-17,cmp_1004,Retail Ops Teardown Series,linkedin,3100,193,103,3
+2026-03-17,cmp_1005,Spring Newsletter,email,1920,98,67,5
+2026-03-17,cmp_1006,Supply Chain Data Webinar,webinar,676,56,43,1
+2026-03-18,cmp_1001,Logistics Resilience Webinar,webinar,1129,90,53,5
+2026-03-18,cmp_1002,Cloud Migration Checklist Email,email,2194,187,126,14
+2026-03-18,cmp_1003,Healthcare Admin Benchmark Report,content,1311,141,96,8
+2026-03-18,cmp_1004,Retail Ops Teardown Series,linkedin,2863,212,89,3
+2026-03-18,cmp_1005,Spring Newsletter,email,1575,160,80,3
+2026-03-18,cmp_1006,Supply Chain Data Webinar,webinar,600,65,48,4
+2026-03-19,cmp_1001,Logistics Resilience Webinar,webinar,742,49,25,1
+2026-03-19,cmp_1002,Cloud Migration Checklist Email,email,1742,141,71,8
+2026-03-19,cmp_1003,Healthcare Admin Benchmark Report,content,2067,182,90,10
+2026-03-19,cmp_1004,Retail Ops Teardown Series,linkedin,2627,196,78,5
+2026-03-19,cmp_1005,Spring Newsletter,email,2351,200,96,7
+2026-03-19,cmp_1006,Supply Chain Data Webinar,webinar,543,37,16,1
+2026-03-20,cmp_1001,Logistics Resilience Webinar,webinar,570,29,15,0
+2026-03-20,cmp_1002,Cloud Migration Checklist Email,email,2564,223,156,13
+2026-03-20,cmp_1003,Healthcare Admin Benchmark Report,content,1759,196,108,6
+2026-03-20,cmp_1004,Retail Ops Teardown Series,linkedin,4302,260,179,15
+2026-03-20,cmp_1005,Spring Newsletter,email,1524,165,124,10
+2026-03-20,cmp_1006,Supply Chain Data Webinar,webinar,1068,114,51,3
+2026-03-21,cmp_1001,Logistics Resilience Webinar,webinar,632,68,49,5
+2026-03-21,cmp_1002,Cloud Migration Checklist Email,email,1792,201,135,12
+2026-03-21,cmp_1003,Healthcare Admin Benchmark Report,content,823,42,19,1
+2026-03-21,cmp_1004,Retail Ops Teardown Series,linkedin,1484,161,100,8
+2026-03-21,cmp_1005,Spring Newsletter,email,1849,180,107,3
+2026-03-21,cmp_1006,Supply Chain Data Webinar,webinar,780,79,47,3
+2026-03-22,cmp_1001,Logistics Resilience Webinar,webinar,710,38,26,1
+2026-03-22,cmp_1002,Cloud Migration Checklist Email,email,1108,75,51,2
+2026-03-22,cmp_1003,Healthcare Admin Benchmark Report,content,1251,147,87,5
+2026-03-22,cmp_1004,Retail Ops Teardown Series,linkedin,2133,208,147,12
+2026-03-22,cmp_1005,Spring Newsletter,email,1871,103,47,2
+2026-03-22,cmp_1006,Supply Chain Data Webinar,webinar,752,53,33,1
+2026-03-23,cmp_1001,Logistics Resilience Webinar,webinar,583,40,26,2
+2026-03-23,cmp_1002,Cloud Migration Checklist Email,email,2737,192,116,8
+2026-03-23,cmp_1003,Healthcare Admin Benchmark Report,content,1459,85,64,3
+2026-03-23,cmp_1004,Retail Ops Teardown Series,linkedin,4285,495,201,14
+2026-03-23,cmp_1005,Spring Newsletter,email,3014,354,205,11
+2026-03-23,cmp_1006,Supply Chain Data Webinar,webinar,691,80,38,3
+2026-03-24,cmp_1001,Logistics Resilience Webinar,webinar,642,55,42,1
+2026-03-24,cmp_1002,Cloud Migration Checklist Email,email,3014,258,194,18
+2026-03-24,cmp_1003,Healthcare Admin Benchmark Report,content,1177,132,78,2
+2026-03-24,cmp_1004,Retail Ops Teardown Series,linkedin,1868,157,91,5
+2026-03-24,cmp_1005,Spring Newsletter,email,1710,126,66,6
+2026-03-24,cmp_1006,Supply Chain Data Webinar,webinar,541,55,40,1
+2026-03-25,cmp_1001,Logistics Resilience Webinar,webinar,1207,120,91,5
+2026-03-25,cmp_1002,Cloud Migration Checklist Email,email,2154,166,132,10
+2026-03-25,cmp_1003,Healthcare Admin Benchmark Report,content,1332,106,54,1
+2026-03-25,cmp_1004,Retail Ops Teardown Series,linkedin,2112,228,117,13
+2026-03-25,cmp_1005,Spring Newsletter,email,1918,131,79,3
+2026-03-25,cmp_1006,Supply Chain Data Webinar,webinar,808,94,70,7
+2026-03-26,cmp_1001,Logistics Resilience Webinar,webinar,994,113,87,6
+2026-03-26,cmp_1002,Cloud Migration Checklist Email,email,2821,150,103,7
+2026-03-26,cmp_1003,Healthcare Admin Benchmark Report,content,1803,171,87,2
+2026-03-26,cmp_1004,Retail Ops Teardown Series,linkedin,4158,244,143,8
+2026-03-26,cmp_1005,Spring Newsletter,email,2011,204,161,8
+2026-03-26,cmp_1006,Supply Chain Data Webinar,webinar,1012,71,44,2
+2026-03-27,cmp_1001,Logistics Resilience Webinar,webinar,660,40,19,2
+2026-03-27,cmp_1002,Cloud Migration Checklist Email,email,2394,156,118,14
+2026-03-27,cmp_1003,Healthcare Admin Benchmark Report,content,1439,86,41,1
+2026-03-27,cmp_1004,Retail Ops Teardown Series,linkedin,2708,152,75,3
+2026-03-27,cmp_1005,Spring Newsletter,email,2533,283,198,13
+2026-03-27,cmp_1006,Supply Chain Data Webinar,webinar,837,72,39,2
+2026-03-28,cmp_1001,Logistics Resilience Webinar,webinar,409,28,22,0
+2026-03-28,cmp_1002,Cloud Migration Checklist Email,email,1684,158,117,5
+2026-03-28,cmp_1003,Healthcare Admin Benchmark Report,content,857,57,31,2
+2026-03-28,cmp_1004,Retail Ops Teardown Series,linkedin,2958,323,241,7
+2026-03-28,cmp_1005,Spring Newsletter,email,1051,104,78,5
+2026-03-28,cmp_1006,Supply Chain Data Webinar,webinar,673,33,18,2
+2026-03-29,cmp_1001,Logistics Resilience Webinar,webinar,794,87,68,3
+2026-03-29,cmp_1002,Cloud Migration Checklist Email,email,1154,70,42,3
+2026-03-29,cmp_1003,Healthcare Admin Benchmark Report,content,1420,142,93,9
+2026-03-29,cmp_1004,Retail Ops Teardown Series,linkedin,2095,185,76,7
+2026-03-29,cmp_1005,Spring Newsletter,email,1320,151,99,5
+2026-03-29,cmp_1006,Supply Chain Data Webinar,webinar,442,29,18,1
+2026-03-30,cmp_1001,Logistics Resilience Webinar,webinar,620,34,20,1
+2026-03-30,cmp_1002,Cloud Migration Checklist Email,email,2185,143,91,2
+2026-03-30,cmp_1003,Healthcare Admin Benchmark Report,content,1261,103,80,7
+2026-03-30,cmp_1004,Retail Ops Teardown Series,linkedin,4051,337,166,8
+2026-03-30,cmp_1005,Spring Newsletter,email,3284,326,170,5
+2026-03-30,cmp_1006,Supply Chain Data Webinar,webinar,898,87,49,2
+2026-03-31,cmp_1001,Logistics Resilience Webinar,webinar,1020,117,57,1
+2026-03-31,cmp_1002,Cloud Migration Checklist Email,email,2089,165,111,5
+2026-03-31,cmp_1003,Healthcare Admin Benchmark Report,content,1856,188,113,5
+2026-03-31,cmp_1004,Retail Ops Teardown Series,linkedin,4265,306,222,11
+2026-03-31,cmp_1005,Spring Newsletter,email,1865,192,99,11
+2026-03-31,cmp_1006,Supply Chain Data Webinar,webinar,896,56,27,1
+2026-04-01,cmp_1001,Logistics Resilience Webinar,webinar,1019,118,54,3
+2026-04-01,cmp_1002,Cloud Migration Checklist Email,email,1848,218,99,3
+2026-04-01,cmp_1003,Healthcare Admin Benchmark Report,content,972,75,56,6
+2026-04-01,cmp_1004,Retail Ops Teardown Series,linkedin,3677,440,339,20
+2026-04-01,cmp_1005,Spring Newsletter,email,1796,207,144,4
+2026-04-01,cmp_1006,Supply Chain Data Webinar,webinar,1018,77,42,2
+2026-04-02,cmp_1001,Logistics Resilience Webinar,webinar,661,33,16,0
+2026-04-02,cmp_1002,Cloud Migration Checklist Email,email,3274,192,150,7
+2026-04-02,cmp_1003,Healthcare Admin Benchmark Report,content,1327,142,103,7
+2026-04-02,cmp_1004,Retail Ops Teardown Series,linkedin,1982,164,90,10
+2026-04-02,cmp_1005,Spring Newsletter,email,1810,136,103,3
+2026-04-02,cmp_1006,Supply Chain Data Webinar,webinar,835,89,62,2
+2026-04-03,cmp_1001,Logistics Resilience Webinar,webinar,565,30,23,1
+2026-04-03,cmp_1002,Cloud Migration Checklist Email,email,2874,324,173,9
+2026-04-03,cmp_1003,Healthcare Admin Benchmark Report,content,2049,190,95,8
+2026-04-03,cmp_1004,Retail Ops Teardown Series,linkedin,2644,183,73,7
+2026-04-03,cmp_1005,Spring Newsletter,email,3199,301,233,7
+2026-04-03,cmp_1006,Supply Chain Data Webinar,webinar,708,58,45,5
+2026-04-04,cmp_1001,Logistics Resilience Webinar,webinar,572,38,21,1
+2026-04-04,cmp_1002,Cloud Migration Checklist Email,email,2255,141,101,9
+2026-04-04,cmp_1003,Healthcare Admin Benchmark Report,content,1321,137,88,5
+2026-04-04,cmp_1004,Retail Ops Teardown Series,linkedin,1856,139,99,3
+2026-04-04,cmp_1005,Spring Newsletter,email,1273,130,64,2
+2026-04-04,cmp_1006,Supply Chain Data Webinar,webinar,395,35,18,2
+2026-04-05,cmp_1001,Logistics Resilience Webinar,webinar,823,98,49,1
+2026-04-05,cmp_1002,Cloud Migration Checklist Email,email,1137,96,65,4
+2026-04-05,cmp_1003,Healthcare Admin Benchmark Report,content,826,65,42,3
+2026-04-05,cmp_1004,Retail Ops Teardown Series,linkedin,2600,284,189,7
+2026-04-05,cmp_1005,Spring Newsletter,email,2138,150,94,5
+2026-04-05,cmp_1006,Supply Chain Data Webinar,webinar,749,47,23,1
+2026-04-06,cmp_1001,Logistics Resilience Webinar,webinar,650,72,45,2
+2026-04-06,cmp_1002,Cloud Migration Checklist Email,email,2200,262,157,7
+2026-04-06,cmp_1003,Healthcare Admin Benchmark Report,content,1870,179,142,5
+2026-04-06,cmp_1004,Retail Ops Teardown Series,linkedin,3037,325,239,26
+2026-04-06,cmp_1005,Spring Newsletter,email,1517,107,47,2
+2026-04-06,cmp_1006,Supply Chain Data Webinar,webinar,1240,112,86,5
+2026-04-07,cmp_1001,Logistics Resilience Webinar,webinar,1163,94,47,4
+2026-04-07,cmp_1002,Cloud Migration Checklist Email,email,3255,186,118,10
+2026-04-07,cmp_1003,Healthcare Admin Benchmark Report,content,1161,88,40,1
+2026-04-07,cmp_1004,Retail Ops Teardown Series,linkedin,2492,229,151,7
+2026-04-07,cmp_1005,Spring Newsletter,email,1461,106,71,3
+2026-04-07,cmp_1006,Supply Chain Data Webinar,webinar,764,49,35,2
+2026-04-08,cmp_1001,Logistics Resilience Webinar,webinar,585,33,18,1
+2026-04-08,cmp_1002,Cloud Migration Checklist Email,email,2667,150,69,6
+2026-04-08,cmp_1003,Healthcare Admin Benchmark Report,content,1391,97,50,5
+2026-04-08,cmp_1004,Retail Ops Teardown Series,linkedin,2634,236,128,8
+2026-04-08,cmp_1005,Spring Newsletter,email,3099,371,202,9
+2026-04-08,cmp_1006,Supply Chain Data Webinar,webinar,1064,68,27,3
+2026-04-09,cmp_1001,Logistics Resilience Webinar,webinar,845,90,50,5
+2026-04-09,cmp_1002,Cloud Migration Checklist Email,email,2324,142,57,4
+2026-04-09,cmp_1003,Healthcare Admin Benchmark Report,content,1668,189,82,7
+2026-04-09,cmp_1004,Retail Ops Teardown Series,linkedin,2779,237,108,5
+2026-04-09,cmp_1005,Spring Newsletter,email,2440,280,124,9
+2026-04-09,cmp_1006,Supply Chain Data Webinar,webinar,1119,131,62,2
+2026-04-10,cmp_1001,Logistics Resilience Webinar,webinar,1219,144,85,2
+2026-04-10,cmp_1002,Cloud Migration Checklist Email,email,3218,248,188,16
+2026-04-10,cmp_1003,Healthcare Admin Benchmark Report,content,1889,115,82,4
+2026-04-10,cmp_1004,Retail Ops Teardown Series,linkedin,2863,312,228,10
+2026-04-10,cmp_1005,Spring Newsletter,email,1858,144,87,5
+2026-04-10,cmp_1006,Supply Chain Data Webinar,webinar,628,42,28,3
+2026-04-11,cmp_1001,Logistics Resilience Webinar,webinar,398,35,24,0
+2026-04-11,cmp_1002,Cloud Migration Checklist Email,email,2134,124,79,6
+2026-04-11,cmp_1003,Healthcare Admin Benchmark Report,content,1156,82,46,3
+2026-04-11,cmp_1004,Retail Ops Teardown Series,linkedin,2041,196,113,7
+2026-04-11,cmp_1005,Spring Newsletter,email,1039,96,57,2
+2026-04-11,cmp_1006,Supply Chain Data Webinar,webinar,762,79,46,2
+2026-04-12,cmp_1001,Logistics Resilience Webinar,webinar,616,35,15,1
+2026-04-12,cmp_1002,Cloud Migration Checklist Email,email,1131,91,54,1
+2026-04-12,cmp_1003,Healthcare Admin Benchmark Report,content,1164,64,44,4
+2026-04-12,cmp_1004,Retail Ops Teardown Series,linkedin,2189,117,70,4
+2026-04-12,cmp_1005,Spring Newsletter,email,2285,136,101,12
+2026-04-12,cmp_1006,Supply Chain Data Webinar,webinar,746,79,37,4
+2026-04-13,cmp_1001,Logistics Resilience Webinar,webinar,894,104,79,3
+2026-04-13,cmp_1002,Cloud Migration Checklist Email,email,2953,340,144,8
+2026-04-13,cmp_1003,Healthcare Admin Benchmark Report,content,1807,110,83,4
+2026-04-13,cmp_1004,Retail Ops Teardown Series,linkedin,3882,233,140,15
+2026-04-13,cmp_1005,Spring Newsletter,email,1839,125,75,4
+2026-04-13,cmp_1006,Supply Chain Data Webinar,webinar,566,35,16,1
+2026-04-14,cmp_1001,Logistics Resilience Webinar,webinar,1029,115,53,5
+2026-04-14,cmp_1002,Cloud Migration Checklist Email,email,1660,144,94,5
+2026-04-14,cmp_1003,Healthcare Admin Benchmark Report,content,1947,173,109,11
+2026-04-14,cmp_1004,Retail Ops Teardown Series,linkedin,2119,253,164,10
+2026-04-14,cmp_1005,Spring Newsletter,email,2971,203,161,13
+2026-04-14,cmp_1006,Supply Chain Data Webinar,webinar,799,82,47,2
+2026-04-15,cmp_1001,Logistics Resilience Webinar,webinar,1075,57,41,2
+2026-04-15,cmp_1002,Cloud Migration Checklist Email,email,2667,317,201,18
+2026-04-15,cmp_1003,Healthcare Admin Benchmark Report,content,1275,63,26,1
+2026-04-15,cmp_1004,Retail Ops Teardown Series,linkedin,3387,271,163,18
+2026-04-15,cmp_1005,Spring Newsletter,email,1693,111,73,2
+2026-04-15,cmp_1006,Supply Chain Data Webinar,webinar,541,40,17,1
+2026-04-16,cmp_1001,Logistics Resilience Webinar,webinar,701,63,40,1
+2026-04-16,cmp_1002,Cloud Migration Checklist Email,email,2637,219,99,11
+2026-04-16,cmp_1003,Healthcare Admin Benchmark Report,content,1192,72,31,2
+2026-04-16,cmp_1004,Retail Ops Teardown Series,linkedin,4020,421,236,12
+2026-04-16,cmp_1005,Spring Newsletter,email,1462,139,86,5
+2026-04-16,cmp_1006,Supply Chain Data Webinar,webinar,1004,81,62,5
+2026-04-17,cmp_1001,Logistics Resilience Webinar,webinar,718,81,33,2
+2026-04-17,cmp_1002,Cloud Migration Checklist Email,email,2219,147,62,6
+2026-04-17,cmp_1003,Healthcare Admin Benchmark Report,content,914,80,62,2
+2026-04-17,cmp_1004,Retail Ops Teardown Series,linkedin,2354,217,130,11
+2026-04-17,cmp_1005,Spring Newsletter,email,3001,186,97,5
+2026-04-17,cmp_1006,Supply Chain Data Webinar,webinar,574,64,45,4
+2026-04-18,cmp_1001,Logistics Resilience Webinar,webinar,381,41,28,2
+2026-04-18,cmp_1002,Cloud Migration Checklist Email,email,2004,163,79,3
+2026-04-18,cmp_1003,Healthcare Admin Benchmark Report,content,825,43,22,2
+2026-04-18,cmp_1004,Retail Ops Teardown Series,linkedin,2508,273,186,10
+2026-04-18,cmp_1005,Spring Newsletter,email,1752,141,100,7
+2026-04-18,cmp_1006,Supply Chain Data Webinar,webinar,511,48,37,1
+2026-04-19,cmp_1001,Logistics Resilience Webinar,webinar,821,41,20,1
+2026-04-19,cmp_1002,Cloud Migration Checklist Email,email,2007,233,162,9
+2026-04-19,cmp_1003,Healthcare Admin Benchmark Report,content,1369,99,49,5
+2026-04-19,cmp_1004,Retail Ops Teardown Series,linkedin,2396,236,157,18
+2026-04-19,cmp_1005,Spring Newsletter,email,1638,178,120,12
+2026-04-19,cmp_1006,Supply Chain Data Webinar,webinar,598,60,37,2
+2026-04-20,cmp_1001,Logistics Resilience Webinar,webinar,692,64,27,3
+2026-04-20,cmp_1002,Cloud Migration Checklist Email,email,1717,89,39,4
+2026-04-20,cmp_1003,Healthcare Admin Benchmark Report,content,1313,78,32,1
+2026-04-20,cmp_1004,Retail Ops Teardown Series,linkedin,3577,337,228,21
+2026-04-20,cmp_1005,Spring Newsletter,email,1566,143,77,7
+2026-04-20,cmp_1006,Supply Chain Data Webinar,webinar,1130,127,54,5
+2026-04-21,cmp_1001,Logistics Resilience Webinar,webinar,1198,139,61,2
+2026-04-21,cmp_1002,Cloud Migration Checklist Email,email,1654,86,63,6
+2026-04-21,cmp_1003,Healthcare Admin Benchmark Report,content,1661,178,116,6
+2026-04-21,cmp_1004,Retail Ops Teardown Series,linkedin,2107,119,83,4
+2026-04-21,cmp_1005,Spring Newsletter,email,2052,163,66,3
+2026-04-21,cmp_1006,Supply Chain Data Webinar,webinar,743,74,40,2
+2026-04-22,cmp_1001,Logistics Resilience Webinar,webinar,1234,105,77,6
+2026-04-22,cmp_1002,Cloud Migration Checklist Email,email,1499,118,67,6
+2026-04-22,cmp_1003,Healthcare Admin Benchmark Report,content,1316,130,79,3
+2026-04-22,cmp_1004,Retail Ops Teardown Series,linkedin,3998,225,163,7
+2026-04-22,cmp_1005,Spring Newsletter,email,1442,92,64,7
+2026-04-22,cmp_1006,Supply Chain Data Webinar,webinar,543,45,26,2
+2026-04-23,cmp_1001,Logistics Resilience Webinar,webinar,672,56,30,3
+2026-04-23,cmp_1002,Cloud Migration Checklist Email,email,1940,225,115,5
+2026-04-23,cmp_1003,Healthcare Admin Benchmark Report,content,1739,147,65,5
+2026-04-23,cmp_1004,Retail Ops Teardown Series,linkedin,2060,216,146,14
+2026-04-23,cmp_1005,Spring Newsletter,email,2645,198,110,7
+2026-04-23,cmp_1006,Supply Chain Data Webinar,webinar,1181,66,49,1
+2026-04-24,cmp_1001,Logistics Resilience Webinar,webinar,688,47,35,2
+2026-04-24,cmp_1002,Cloud Migration Checklist Email,email,2168,242,119,8
+2026-04-24,cmp_1003,Healthcare Admin Benchmark Report,content,1537,158,110,9
+2026-04-24,cmp_1004,Retail Ops Teardown Series,linkedin,2724,198,91,9
+2026-04-24,cmp_1005,Spring Newsletter,email,2711,276,129,8
+2026-04-24,cmp_1006,Supply Chain Data Webinar,webinar,1096,99,44,3
+2026-04-25,cmp_1001,Logistics Resilience Webinar,webinar,824,54,25,1
+2026-04-25,cmp_1002,Cloud Migration Checklist Email,email,1953,212,97,4
+2026-04-25,cmp_1003,Healthcare Admin Benchmark Report,content,837,60,36,1
+2026-04-25,cmp_1004,Retail Ops Teardown Series,linkedin,1871,118,93,8
+2026-04-25,cmp_1005,Spring Newsletter,email,1144,134,59,3
+2026-04-25,cmp_1006,Supply Chain Data Webinar,webinar,873,92,63,4
+2026-04-26,cmp_1001,Logistics Resilience Webinar,webinar,476,45,19,0
+2026-04-26,cmp_1002,Cloud Migration Checklist Email,email,1529,80,44,4
+2026-04-26,cmp_1003,Healthcare Admin Benchmark Report,content,1212,103,67,4
+2026-04-26,cmp_1004,Retail Ops Teardown Series,linkedin,1548,142,79,7
+2026-04-26,cmp_1005,Spring Newsletter,email,2228,178,112,10
+2026-04-26,cmp_1006,Supply Chain Data Webinar,webinar,590,38,26,2
+2026-04-27,cmp_1001,Logistics Resilience Webinar,webinar,1097,108,80,7
+2026-04-27,cmp_1002,Cloud Migration Checklist Email,email,2671,218,114,9
+2026-04-27,cmp_1003,Healthcare Admin Benchmark Report,content,1017,80,57,5
+2026-04-27,cmp_1004,Retail Ops Teardown Series,linkedin,3421,230,130,9
+2026-04-27,cmp_1005,Spring Newsletter,email,2633,207,138,15
+2026-04-27,cmp_1006,Supply Chain Data Webinar,webinar,671,64,45,2
+2026-04-28,cmp_1001,Logistics Resilience Webinar,webinar,892,105,43,3
+2026-04-28,cmp_1002,Cloud Migration Checklist Email,email,1748,183,142,10
+2026-04-28,cmp_1003,Healthcare Admin Benchmark Report,content,1021,92,56,5
+2026-04-28,cmp_1004,Retail Ops Teardown Series,linkedin,3130,296,216,16
+2026-04-28,cmp_1005,Spring Newsletter,email,2227,259,125,11
+2026-04-28,cmp_1006,Supply Chain Data Webinar,webinar,822,84,37,4
+2026-04-29,cmp_1001,Logistics Resilience Webinar,webinar,795,42,21,1
+2026-04-29,cmp_1002,Cloud Migration Checklist Email,email,1465,116,65,6
+2026-04-29,cmp_1003,Healthcare Admin Benchmark Report,content,1322,90,44,4
+2026-04-29,cmp_1004,Retail Ops Teardown Series,linkedin,4191,364,177,18
+2026-04-29,cmp_1005,Spring Newsletter,email,2192,142,64,6
+2026-04-29,cmp_1006,Supply Chain Data Webinar,webinar,1122,105,61,4
+2026-04-30,cmp_1001,Logistics Resilience Webinar,webinar,702,82,44,3
+2026-04-30,cmp_1002,Cloud Migration Checklist Email,email,3011,322,189,10
+2026-04-30,cmp_1003,Healthcare Admin Benchmark Report,content,1557,91,66,4
+2026-04-30,cmp_1004,Retail Ops Teardown Series,linkedin,3969,272,149,7
+2026-04-30,cmp_1005,Spring Newsletter,email,2258,142,56,5
+2026-04-30,cmp_1006,Supply Chain Data Webinar,webinar,742,49,25,1

@@ -24,5 +24,10 @@ def channels():
     return query("select * from v_channel_rollup")
 
 
+@app.get("/api/webinars")
+def webinars():
+    return query("select * from v_webinar_attribution")
+
+
 # keep this last or it swallows the api routes
 app.mount("/", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "..", "web"), html=True), name="web")
