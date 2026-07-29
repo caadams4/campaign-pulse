@@ -1,7 +1,8 @@
 """Pull yesterday-ish numbers from Plovercast into postgres."""
 import os
 import argparse
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
+from zoneinfo import ZoneInfo
 
 from pulse.plovercast import Plovercast
 from pulse import db
@@ -17,8 +18,12 @@ def normalise(row):
     )
 
 
-def run(client, conn, days):
-    end = date.today()
+def today_local(tz):
+    return datetime.now(ZoneInfo(tz)).date()
+
+
+def run(client, conn, days, tz="America/Toronto"):
+    end = today_local(tz)
     start = end - timedelta(days=days)
     with conn.cursor() as cur:
         for c in client.campaigns():
@@ -34,7 +39,7 @@ def main():
     args = ap.parse_args()
     client = Plovercast(os.environ["PLOVERCAST_API_KEY"])
     conn = db.connect(os.environ["PULSE_DATABASE_URL"])
-    run(client, conn, args.days)
+    run(client, conn, args.days, os.environ.get("PULSE_TZ") or "America/Toronto")
     print("done")  # TODO: store the raw json somewhere so we can replay it
 
 
