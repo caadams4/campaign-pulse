@@ -62,6 +62,11 @@ shows up on the page.
 pytest
 ```
 
+## 📣 Plovercast v2
+
+v2 got switched off on 10 Aug. We were already on v3 so nothing broke, which
+is a nice change.
+
 ## 🙏 Thanks
 
 - **Sunniva Oduya** at Plovercast, for patiently explaining cursors and for the
