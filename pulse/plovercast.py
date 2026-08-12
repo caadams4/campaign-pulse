@@ -56,4 +56,4 @@ class Plovercast:
             f"/campaigns/{campaign_id}/metrics",
             {"from": start.isoformat(), "to": end.isoformat(), "granularity": "day"},
         )
-        return data["rows"]
+        return data.get("rows", [])

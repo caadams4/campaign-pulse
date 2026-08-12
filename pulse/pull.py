@@ -28,7 +28,7 @@ def run(client, conn, days, tz="America/Toronto"):
     with conn.cursor() as cur:
         for c in client.campaigns():
             db.upsert_campaign(cur, c)
-            for row in client.daily_metrics(c["id"], start, end):
+            for row in client.daily_metrics(c["id"], start, end) or []:
                 db.upsert_daily(cur, c["id"], normalise(row))
     conn.commit()
 
