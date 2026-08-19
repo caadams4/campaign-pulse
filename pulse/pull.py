@@ -22,9 +22,9 @@ def today_local(tz):
     return datetime.now(ZoneInfo(tz)).date()
 
 
-def run(client, conn, days, tz="America/Toronto"):
+def run(client, conn, days, tz="America/Toronto", since=None):
     end = today_local(tz)
-    start = end - timedelta(days=days)
+    start = since or end - timedelta(days=days)
     with conn.cursor() as cur:
         for c in client.campaigns():
             db.upsert_campaign(cur, c)
@@ -36,10 +36,11 @@ def run(client, conn, days, tz="America/Toronto"):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--days", type=int, default=3)
+    ap.add_argument("--since", type=date.fromisoformat, help="backfill from this date (YYYY-MM-DD)")
     args = ap.parse_args()
     client = Plovercast(os.environ["PLOVERCAST_API_KEY"])
     conn = db.connect(os.environ["PULSE_DATABASE_URL"])
-    run(client, conn, args.days, os.environ.get("PULSE_TZ") or "America/Toronto")
+    run(client, conn, args.days, os.environ.get("PULSE_TZ") or "America/Toronto", args.since)
     print("done")  # TODO: store the raw json somewhere so we can replay it
 
 

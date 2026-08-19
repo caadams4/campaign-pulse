@@ -25,6 +25,7 @@ uvicorn pulse.web:app --port 8000
 
 Open http://localhost:8000 and you should see a chart. If you have a real
 key in `.env`, `python -m pulse.pull --days 3` pulls the last three days.
+`--since 2026-04-01` backfills from a date.
 
 ## ⚙️ Config
 
