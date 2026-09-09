@@ -9,6 +9,10 @@ scratch space, not polished
 - rate limit is roughly 60 req/min, 429s come with Retry-After
 - v2 is being switched off sometime in august, date TBD, we are already on v3 so nothing to do
 
+## postgres
+- prod PG went to 16 on 5 Sep window. ran all three sql files against pg-stg-01 (already on 16 since Aug), views fine
+- we only run on staging anyway for now
+
 ## numbers that don't match
 - Plovercast UI shows visits in the viewer's timezone, API is UTC. see MKT-214
 - webinar registrations can lag a day
