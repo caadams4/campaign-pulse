@@ -14,12 +14,12 @@ order by day;
 create or replace view v_campaign_weekly as
 select c.id as campaign_id,
        c.name,
-       to_char(d.day, 'YYYY-WW') as week,
+       date_trunc('week', d.day)::date as week_start,
        sum(d.visits) as visits,
        sum(d.signups) as signups
 from campaign_daily d
 join campaign c on c.id = d.campaign_id
-group by c.id, c.name, to_char(d.day, 'YYYY-WW');
+group by c.id, c.name, date_trunc('week', d.day);
 
 -- last 30 days by channel
 create or replace view v_channel_rollup as
