@@ -17,6 +17,10 @@ def upsert_campaign(cur, c):
     )
 
 
+def archive_missing(cur, live_ids):
+    cur.execute("update campaign set status = 'archived' where not (id = any(%s))", (list(live_ids),))
+
+
 def upsert_daily(cur, campaign_id, row):
     cur.execute(
         """
