@@ -1,5 +1,9 @@
 import os
+import csv
+import io
+
 from fastapi import FastAPI
+from fastapi.responses import Response
 from fastapi.staticfiles import StaticFiles
 import psycopg
 from psycopg.rows import dict_row
@@ -27,6 +31,18 @@ def channels():
 @app.get("/api/webinars")
 def webinars():
     return query("select * from v_webinar_attribution")
+
+
+@app.get("/api/export.csv")
+def export_csv(days: int = 30):
+    rows = query("select * from v_daily_totals where day >= current_date - %s order by day", (days,))
+    buf = io.StringIO()
+    if rows:
+        wr = csv.DictWriter(buf, fieldnames=list(rows[0].keys()))
+        wr.writeheader()
+        wr.writerows(rows)
+    return Response(buf.getvalue(), media_type="text/csv",
+                    headers={"Content-Disposition": "attachment; filename=campaign-pulse.csv"})
 
 
 # keep this last or it swallows the api routes
