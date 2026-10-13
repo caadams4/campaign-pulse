@@ -5,3 +5,10 @@ canvas { border: 1px solid #ddd; width: 100%; height: auto; }
 table { border-collapse: collapse; margin-top: 1rem; width: 100%; }
 td, th { padding: 4px 8px; border-bottom: 1px solid #eee; text-align: right; }
 th:first-child, td:first-child { text-align: left; }
+
+@media (prefers-color-scheme: dark) {
+  body { background: #161a20; color: #e6e6e6; }
+  canvas { border-color: #333; background: #1d222a; }
+  td, th { border-color: #2c313a; }
+  .sub { color: #9aa; }
+}

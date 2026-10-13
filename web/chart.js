@@ -3,7 +3,7 @@ function drawLines(canvas, rows) {
   const ctx = canvas.getContext('2d');
   const W = canvas.width, H = canvas.height, pad = 40;
   ctx.clearRect(0, 0, W, H);
-  if (!rows.length) { return; }
+  if (!rows.length) { ctx.fillStyle = "#888"; ctx.fillText('no data yet, did the pull run?', pad, pad); return; }
   const series = [['visits', '#2a6fdb'], ['signups', '#e0702b']];
   const max = Math.max(...rows.map(r => Math.max(r.visits, r.signups * 10)));
   const x = i => pad + i * (W - 2 * pad) / Math.max(rows.length - 1, 1);
