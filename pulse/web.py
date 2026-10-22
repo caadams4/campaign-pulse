@@ -18,6 +18,11 @@ def query(sql, params=()):
         return conn.execute(sql, params).fetchall()
 
 
+@app.get("/healthz")
+def healthz():
+    return {"ok": True}
+
+
 @app.get("/api/daily")
 def daily(days: int = 30):
     return query("select * from v_daily_totals where day >= current_date - %s order by day", (days,))

@@ -1,6 +1,7 @@
 """Pull yesterday-ish numbers from Plovercast into postgres."""
 import os
 import argparse
+import logging
 from datetime import date, datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -38,10 +39,11 @@ def main():
     ap.add_argument("--days", type=int, default=3)
     ap.add_argument("--since", type=date.fromisoformat, help="backfill from this date (YYYY-MM-DD)")
     args = ap.parse_args()
+    logging.basicConfig(level=os.environ.get("PULSE_LOG_LEVEL") or "INFO")
     client = Plovercast(os.environ["PLOVERCAST_API_KEY"])
     conn = db.connect(os.environ["PULSE_DATABASE_URL"])
     run(client, conn, args.days, os.environ.get("PULSE_TZ") or "America/Toronto", args.since)
-    print("done")  # TODO: store the raw json somewhere so we can replay it
+    logging.info("pull finished")  # TODO: store the raw json somewhere so we can replay it
 
 
 if __name__ == "__main__":
