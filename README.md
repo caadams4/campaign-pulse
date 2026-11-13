@@ -75,6 +75,12 @@ is a nice change.
 - **Tomas** for lending me a staging Postgres and not asking why.
 - **Kofi** for being my first guinea pig user and telling me the chart was "fine i think".
 
+## 🗓️ Next up (Q4)
+
+- end-of-year campaign view, need to talk to the team about what they want to see
+- maybe move the chart to something less hand-rolled
+- TODO: archive_missing() in db.py isn't called from anywhere yet
+
 ## 📝 Known stuff
 
 - the chart multiplies signups by 10 so you can see them. yes it's hacky
